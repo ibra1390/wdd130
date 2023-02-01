@@ -144,7 +144,7 @@ h4 {
     padding-top: 5px;
 }
 
-.rives-card, .camping-card, .rapids-card {
+.rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
 
@@ -155,4 +155,8 @@ h4 {
 
 main section img {
     box-sizing: border-box;
+}
+
+.mountains {
+    margin: 100px 0px 200px 0px;
 }
