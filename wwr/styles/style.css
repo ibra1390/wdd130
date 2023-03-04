@@ -229,6 +229,67 @@ nav {
     grid-template-columns: repeat(10, 1fr);
 }
 
+/* New page Blog CSS beginning*/
+
+#blog {   
+    
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#summer, #highlights, #wild {
+    margin: 50px 0;
+    text-align: justify;
+}
+
+
+
+#summer h2, #highlights h2, #wild h2 {
+    text-align: center;
+
+}
+
+
+#summerImg {
+    border: 10px solid #d9c2a3;
+    box-shadow: 5px 5px 10px black;
+    width: 100%;
+}
+
+#scorpion {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #d9c2a3;
+    box-shadow: 5px 5px 10px black;   
+}
+
+#sheep {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #d9c2a3;
+    box-shadow: 5px 5px 10px black;
+   
+}
+
+#image1 {
+    
+    border: 10px solid #d9c2a3;
+    box-shadow: 5px 5px 10px black;
+    margin-left: 150px;
+}
+
+#image2 {
+    
+    border: 10px solid #d9c2a3;
+    box-shadow: 5px 5px 10px black;
+    margin-left: 25px;
+     
+}
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
