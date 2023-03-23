@@ -21,36 +21,60 @@
         </header>
         <main class = "page2-grid">
             <h1>Why is it so important to learn English these days?</h1>
-            <p>Let me give you some ideas that will help you to decide why you need this beautiful language in your life:</p>
-            <section class = "international">
-                <p><b>1. English is the language of International Communication:</b>  If you want to communicate with people from all around the world, you will find out that it's very common that people from these places speak English, even if they are not native speakers. it will be easier to make friends!</p>
-                <img class = "internationalImg" src = "images/page3.jpg" alt = "international language">
-            </section> 
-            <section class = "jobs">
-                <p><b>2. Getting a better job: </b>English is one of the most spoken language in the world and because of this, it has become the one of science, aviation, computers, diplomacy, and tourism. So, knowing English will increase your chances of getting a good job whether in your own country or abroad.</p>
-                <img class = "jobsImg" src = "images/page4.jpg" alt = "studying abroad">
-            </section> 
-            <section class = "studying">
-                <p><b>3. Studying abroad:</b> English is spoken in a lot of schools and universities around the world which offer programs in English. If you have a good level of academic English, you will get a lot of opportunities to find an appropriate school and courses to suit your needs. To earn a position at one of those prestigious universities it is necessary to be able to read, write, speak and listen in English.</p>
-                <img class = "studyingImg" src = "images/page5.jpg" alt = "international language">
-            </section> 
-            <section class = "media">
-                <p><b>4. English is the language of the media industry:</b> Remember what I told you before? If you like reading a book, listening your favorite songs, watching films and TV shows, you will enjoy even more these activities with some knowledge of English because it is everywhere that you can imagine.</p>
-                <img class = "mediaImg" src = "images/page2.jpg" alt = "media industry">
-            </section> 
-            <section class = "internet">
-                <p><b>5. The language of the Internet:</b> English is a particularly important language online with the highest percentage of content on the internet. As well as this, some of the world’s largest tech companies are based in English speaking countries.</p>
-                <img class = "internetImg" src = "images/page6.png" alt = "the language of the Internet">
-            </section> 
-            <section class = "travel">
-                <p><b> 6. Traveling abroad:</b> and last but not less important, it will get easier to travel to another country thanks to its international nature, so you will see how people communicate with you even if it’s not the official language in that country.</p>
-                <img class = "travellImg" src = "images/page1.jpg" alt = "traveling abroad">
-            </section> 
+            <p><b>Let me give you some ideas that will help you to decide why you need this beautiful language in your life:</b></p>
+            <button class="accordion"><b>1. English is the language of International Communication</b></button>
+            <div class="panel">
+                <p>If you want to communicate with people from all around the world, you will find out that it's very common that people from these places speak English, even if they are not native speakers. it will be easier to make friends!</p>
+                <img class = "panelImg" src = "images/page3.jpg" alt = "international language">
+            </div>
+            <button class="accordion"><b>2. Getting a better job</b></button>
+            <div class="panel">
+                <p>English is one of the most spoken language in the world and because of this, it has become the one of science, aviation, computers, diplomacy, and tourism. So, knowing English will increase your chances of getting a good job whether in your own country or abroad.</p>
+                <img class = "panelImg" src = "images/page4.jpg" alt = "studying abroad">
+            </div>
+            <button class="accordion"><b>3. Studying abroad</b></button>
+            <div class="panel">
+                <p>English is spoken in a lot of schools and universities around the world which offer programs in English. If you have a good level of academic English, you will get a lot of opportunities to find an appropriate school and courses to suit your needs. To earn a position at one of those prestigious universities it is necessary to be able to read, write, speak and listen in English.</p>
+                <img class = "panelImg" src = "images/page5.jpg" alt = "international language">
+            </div>
+            <button class="accordion"><b>4. English is the language of the media industry</b></button>
+            <div class="panel">
+                <p>Remember what I told you before? If you like reading a book, listening your favorite songs, watching films and TV shows, you will enjoy even more these activities with some knowledge of English because it is everywhere that you can imagine.</p>
+                <img class = "panelImg" src = "images/page2.jpg" alt = "media industry">
+            </div>
+            <button class="accordion"><b>5. The language of the Internet</b></button>
+            <div class="panel">
+                <p>English is a particularly important language online with the highest percentage of content on the internet. As well as this, some of the world’s largest tech companies are based in English speaking countries.</p>
+                <img class = "panelImg" src = "images/page6.png" alt = "the language of the Internet">
+            </div>
+            <button class="accordion"><b> 6. Traveling abroad</b></button>
+            <div class="panel">
+                <p>and last but not less important, it will get easier to travel to another country thanks to its international nature, so you will see how people communicate with you even if it’s not the official language in that country.</p>
+                <img class = "panelImg" src = "images/page1.jpg" alt = "traveling abroad">
+            </div>
             <div id="background"></div>
             <section class = "msg">
-                <p>After all these reasons, aren't you convinced yet? Then you should text me and I will give you one hundred more to start learning English!</p>
-                <img class = "conclusion" src = "images/page7.jpg" alt = "Learning English">
+                <p><b>After all these reasons, aren't you convinced yet? Then you should text me and I will give you one hundred more to start learning English!</b></p>
+                <img class = "conclusionImg" src = "images/page7.jpg" alt = "Learning English">
             </section>
+
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                      panel.style.maxHeight = null;
+                    } else {
+                      panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                  });
+                }
+            </script>
+                
         </main>
         <footer>
             <p>Easy Learning &copy; 2023 - Ibraim Gonzalez</p>
